@@ -1,6 +1,6 @@
 # 需求拆分 Skill 在线安装
 
-技能版本：1.0.0 首个公开版本。安装程序版本：1.0.0。官网：https://admin-ssss.github.io/
+技能版本：1.0.0 首个公开版本。安装程序版本：1.0.0。官网：https://admin-ssss.github.io/requirement-splitter/
 
 安装文件公开托管在官网，不需要联系作者领取文件或登录私有仓库。默认使用同一条命令完成全局安装，无需选择工具或项目范围；不要因目录安装成功跳过需求与验收标准的人审。
 
@@ -11,7 +11,7 @@
 Claude Code、Codex、WorkBuddy、Cursor、Trae 使用同一条命令：
 
 ```sh
-npx --yes https://admin-ssss.github.io/installers/requirement-splitter-installer-1.0.0.tgz
+npx --yes https://admin-ssss.github.io/requirement-splitter/installers/requirement-splitter-installer-1.0.0.tgz
 ```
 
 程序将完整技能放入 ~/.claude/skills、~/.agents/skills、~/.trae/skills 三个全局目录。Claude Code 使用自己的目录，Codex、Cursor、WorkBuddy 使用共享目录，Trae 使用自己的目录。重复安装相同内容不会重写；已有旧版先保留备份。安装不会改动工具的模型配置。
@@ -45,9 +45,9 @@ WorkBuddy 官方确认自定义技能包可通过“专家·技能·连接器 �
 助手应先确认真实工具和支持的技能机制，有现成安装要求时沿用。具备 Node.js 时按对应命令安装；没有 Node.js 但有下载、解压及文件操作能力时，可直接下载完整 ZIP，校验 SHA-256，解压后按对应工具的目录安装全部文件。已有同名技能先保留旧版，不能覆盖无关技能或配置；安装后报告实际路径、版本和引用文件是否完整。环境无法安装时说明具体缺项，不伪称成功。
 
 下载地址：
-https://admin-ssss.github.io/downloads/requirement-splitter-v1.0.0.zip
+https://admin-ssss.github.io/requirement-splitter/downloads/requirement-splitter-v1.0.0.zip
 
-ZIP SHA-256：5497119dfdae0021900094958d06d9afa70bc02dfb849cee20256247bf071b42
+ZIP SHA-256：5a43fa89db8fb6f1ba8b293f224db2f89ded51d7f3b9d34a57dd9c955d93c531
 
 完整目录有 12 个文件：SKILL.md、CHANGELOG.md、9 个 references 文件、scripts/validate_project.py。不能只下载 SKILL.md。
 
