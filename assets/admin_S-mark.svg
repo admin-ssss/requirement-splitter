@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="108 80 528 528" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">苏适圈超管 · 官网图标</title>
+  <desc id="logo-desc">适合导航栏和 Skill 图标的小尺寸版本。保留星球、S 形环抱曲线、缩小的星芒与稍大的入口圆点，白色 &gt;. 提示符完整位于圆点内。略增星环厚度。</desc>
+  <defs>
+    <mask id="planet-orbit-clearance" maskUnits="userSpaceOnUse" x="0" y="0" width="744" height="670">
+      <rect x="0" y="0" width="744" height="670" fill="#ffffff"/>
+      <path d="M 606 351 A 246 48 0 0 1 114 351"
+            transform="rotate(-22 360 351)"
+            fill="none" stroke="#000000" stroke-width="31"/>
+    </mask>
+  </defs>
+  <g id="symbol" transform="translate(12 -10)">
+    <g id="outer-s-curves" fill="#2872cb">
+      <path id="upper-curve" d="M 493 181 C 425 134 350 134 282 160 C 212 187 173 237 173 282 C 173 313 189 334 216 349 C 209 327 200 313 201 288 C 202 244 249 191 310 167 C 369 142 434 149 493 181 Z"/>
+      <path id="lower-curve" d="M 493 181 C 425 134 350 134 282 160 C 212 187 173 237 173 282 C 173 313 189 334 216 349 C 209 327 200 313 201 288 C 202 244 249 191 310 167 C 369 142 434 149 493 181 Z" transform="rotate(180 360 360)"/>
+    </g>
+    <ellipse id="orbit" cx="360" cy="351" rx="246" ry="48"
+             transform="rotate(-22 360 351)"
+             fill="none" stroke="#2872cb" stroke-width="17"/>
+    <circle id="planet" cx="360" cy="360" r="120" fill="#2872cb"
+            mask="url(#planet-orbit-clearance)"/>
+    <path id="planet-highlight" transform="rotate(3.524221 360 360)" d="M 276 342
+      C 275 310 294 280 322 266
+      C 333 262 341 261 351 262
+      C 320 281 294 310 276 342 Z" fill="#ffffff"/>
+    <path id="star" transform="translate(528 145) scale(0.78) translate(-528 -145)" d="M 528 114
+      C 524 134 518 139 500 145
+      C 518 151 524 157 528 176
+      C 532 157 538 151 556 145
+      C 538 139 532 134 528 114 Z" fill="#203d5b"/>
+    <g id="entry-node" role="img" aria-label="命令入口 &gt;." data-symbol="&gt;.">
+      <circle id="satellite-dot" data-role="entry-node" cx="204" cy="526" r="19" fill="#203d5b"/>
+      <g id="terminal-symbol" data-text="&gt;." fill="#ffffff"
+         transform="translate(204 526) scale(1.16) translate(-204 -526)">
+        <path id="terminal-chevron" d="M 197 520.5 L 203.5 526 L 197 531.5"
+              fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle id="terminal-period" cx="210.2" cy="531.3" r="1.4"/>
+      </g>
+    </g>
+  </g>
+</svg>
