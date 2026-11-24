@@ -9,7 +9,7 @@
   <!--
     首版依据：用户指定的飞书 CLI 官网 + 本项目素材草稿。
     本轮先定义布局、内容和文案；名称、下载入口、反馈入口和文档地址可后续调整。
-    主需求拆分 skill 已准备 V1.0.0 首个公开版本；下载安装不代表业务或软件执行已验证。
+    主需求拆分 skill 已准备 V1.0.1 版本；下载安装不代表业务或软件执行已验证。
     下方预览均为结构示意。界面中的反馈操作只整理、复制或下载，不模拟发送成功。
     形态来自内容：共同需求依据 + 按需的两类输出；首页负责上手，详细规则进入飞书文档。
   -->
@@ -18,7 +18,7 @@
     // 地址未确定时保留 null。下载链接启用后，安装区会自动更新。
     const SITE_CONFIG = {
       name: '需求拆分 Skill',
-      installerUrl: 'https://admin-ssss.github.io/requirement-splitter/installers/requirement-splitter-installer-1.0.0.tgz',
+      installerUrl: 'https://admin-ssss.github.io/requirement-splitter/installers/requirement-splitter-installer-1.0.1.tgz',
       installationGuideUrl: 'https://admin-ssss.github.io/requirement-splitter/install.md',
       releaseLogUrl: 'https://ycnqw5d6pjda.feishu.cn/docx/XpltdXUWOoZyITxkyrcc6mCZnef',
       feedbackUrl: 'https://ycnqw5d6pjda.feishu.cn/share/base/shrcneWAgEP6bfBW3e0jwEJtate',
@@ -330,7 +330,7 @@
             <div class="code-row"><pre id="install-prompt">帮我全局安装需求拆分 Skill：https://admin-ssss.github.io/requirement-splitter/install.md。
 请先读取公开安装说明，检查当前环境，安装完整技能目录；已有同名技能时先保留旧版。</pre><button class="btn subtle" type="button" data-copy-target="install-prompt">复制说明</button></div>
           </div>
-          <p class="install-foot"><span class="status-line" id="release-note"><span class="status-point" aria-hidden="true"></span>V1.0.0，适配 Claude Code、Codex、WorkBuddy、Cursor、Trae；安装后请在新会话中确认可用。</span><a data-install-guide href="#install" target="_blank" rel="noopener noreferrer">安装说明与兼容情况</a><span class="install-link-divider" aria-hidden="true"></span><a data-release-log href="#install" target="_blank" rel="noopener noreferrer">更新日志</a></p>
+          <p class="install-foot"><span class="status-line" id="release-note"><span class="status-point" aria-hidden="true"></span>V1.0.1，适配 Claude Code、Codex、WorkBuddy、Cursor、Trae；安装后请在新会话中确认可用。</span><a data-install-guide href="#install" target="_blank" rel="noopener noreferrer">安装说明与兼容情况</a><span class="install-link-divider" aria-hidden="true"></span><a data-release-log href="#install" target="_blank" rel="noopener noreferrer">更新日志</a></p>
         </div>
       </div>
     </section>
@@ -605,7 +605,7 @@
       <div class="wrap">
         <h2 class="section-title" id="deliverables-title">材料与产出物</h2>
         <p class="section-lead">准备哪些材料，最后会拿到什么。</p>
-        <p class="section-desc">需求文档必填，其他材料可选。交付包括整理后的需求依据、按需生成的开发计划或测试用例，以及拆分质量报告。开发负责人看开发计划，测试负责人看测试用例；其余文件用于追溯来源、核对质量，不必逐份读。</p>
+        <p class="section-desc">需求文档必填，其他材料可选。交付包括整理后的需求依据、按需生成的开发计划或测试用例，以及拆分质量报告。开发负责人看开发计划，测试负责人看测试用例，项目负责人看拆分质量报告；其余文件用于追溯来源、核对质量，不必逐份读。</p>
 
         <div class="sources">
           <div class="sources-head"><strong>原始材料</strong><span>需求文档必填，其余材料可选</span></div>
